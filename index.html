@@ -1,19 +1,19 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>text</h1>
-    <button onmouseenter="" id="button1test">hi</button>
-</body>
+<!-- this should NOT work yet because im just testing some things out -->
 
+<html lang="en">
+    <title>Counter</title>
+    <h1 id="maincounter">0</h1>
+    
+    <button onclick="countUp()">+1</button>
 
 <script>
 
-function ButtonColorChange() {
-    // doesnt work yet but when the mouse hoveres the background will change color
+const value = 0;
+
+function countUp() {
+    value = value + 1
+    document.getElementById("maincounter").textContent = value
+    console.log(value)
 }
 
 </script>
